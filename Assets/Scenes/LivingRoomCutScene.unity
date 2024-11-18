@@ -1517,24 +1517,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textArea: {fileID: 1782702177}
   dialogue:
-  - 'Father:
+  - 'Tatay:
 
-    Aalis kame at mag iibang bansa.
+    Anak, nagkaroon tayo ng problema rito sa bahay.'
+  - 'Tatay:
 
-'
-  - 'Lola:
+    Kailangan muna namin magtrabaho ng mama mo sa ibang bansa para makapag-ipon
+    tayo ng kinakailangang pera.
 
-    Magiingat kayo at ako na ang bahala sakanya.
-
-'
-  - 'Mother:
-
-    Alagaan mo siya at iwasan maging kupal!
 
 '
-  - 'Me:
+  - 'MC:
 
-    Kupal ka ba boss?'
+    Ano po? Kailangan ninyo po ba talagang umalis pareho? '
+  - 'Nanay:
+
+    Oo, anak. Kailangan namin itong gawin ng iyong papa para na rin
+    makapag-ipon tayo ng pera at maipambili ng mga kinakailangan natin.'
+  - 'MC:
+
+    Paano na po ako? Sino na po ang mag-aalaga sa akin? '
+  - 'Tatay:
+
+    Si lola mo na muna ang bahala sa iyo, anak. Tuturuan ka rin niya
+    sa mga gawaing bahay para makatulong ka sa kanya. '
+  - 'MC:
+
+    Ganun po ba, Papa? Sige po, naiintindihan ko po ang mga kailangan kong
+    gawin. Mag-iingat po kayo roon, ha.'
+  - 'Nanay:
+
+    Magpakabait ka at sundin mo ang mga sasabihin at ipagagawa sa iyo
+    ng lola, ha? Para rin sa iyo ang lahat ng ito, anak.
+
+'
+  - 'MC:
+
+    Opo, mamimiss ko po kayo, Mama at Papa!'
   transition: {fileID: 2139715015}
 --- !u!4 &521214506
 Transform:
