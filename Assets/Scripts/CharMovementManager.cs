@@ -11,13 +11,14 @@ public class CharMovementManager : MonoBehaviour
     public bool isJoystick;
     public float movementSpeed = 5;
     public float rotationSpeed = 5;
-    public CharacterController controller;
+    private CharacterController controller;
 
 
 
 
     private void Start()
     {
+        controller = GetComponent<CharacterController>();
         EnableJoystickInput();
     }
 
@@ -43,5 +44,11 @@ public class CharMovementManager : MonoBehaviour
             controller.transform.rotation = Quaternion.LookRotation(targetDirection);
 
         }
+    }
+
+    public void StopCharacter()
+    {
+        isJoystick = false;
+        animator.SetBool("isMoving", false);
     }
 }

@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-
     public TMP_Text textArea;
 
     [TextArea(3, 10)]
     public string[] dialogue;
     public Animator transition;
     private int index = 0;
+    public string nextScene;
     public void Start()
     {
         NextDialogue();
@@ -37,19 +37,26 @@ public class DialogueManager : MonoBehaviour
         if (index >= dialogue.Length)
         {
             transition.enabled = true;
-            StartCoroutine(ChangeScreen());
+            if(nextScene == "")
+            {
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                StartCoroutine(ChangeScreen());
+            }
+            
         }
         else
         {
             StartCoroutine(TypeSentence(dialogue[index]));
             index++;
         }
-        
     }
 
     IEnumerator ChangeScreen()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("House");
+        SceneManager.LoadScene(nextScene);
     }
 }
