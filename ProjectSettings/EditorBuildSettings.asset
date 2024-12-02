@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KitchenCooking.unity
     guid: 7444ad9b53a2790488c169ada7f48b71
+  - enabled: 1
+    path: Assets/Scenes/KitchenCutScene.unity
+    guid: 4851b454cccb5c24bbd01c977c2cb09e
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 535ebe823ff857a42ab3afccb9c38218,
       type: 2}
