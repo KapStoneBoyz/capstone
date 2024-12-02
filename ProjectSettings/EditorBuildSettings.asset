@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BedroomCleaning.unity
     guid: 89f937eb9cf476a4ea975269d8461680
+  - enabled: 1
+    path: Assets/Scenes/KitchenCooking.unity
+    guid: 7444ad9b53a2790488c169ada7f48b71
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 535ebe823ff857a42ab3afccb9c38218,
       type: 2}
