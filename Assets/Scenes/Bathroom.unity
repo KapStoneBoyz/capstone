@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276807, g: 0.21589197, b: 0.29782572, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4342,7 +4342,6 @@ MonoBehaviour:
   isJoystick: 0
   movementSpeed: 3
   rotationSpeed: 10
-  controller: {fileID: 1313179440}
 --- !u!4 &1078878367
 Transform:
   m_ObjectHideFlags: 0

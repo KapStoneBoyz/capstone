@@ -546,3 +546,4 @@ MonoBehaviour:
 
     Opo, mamimiss ko po kayo, Mama at Papa!'
   transition: {fileID: 2781702477824314176}
+  nextScene: 
