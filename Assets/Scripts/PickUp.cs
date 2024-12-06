@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
+
+    public GameObject pickUpBtn;
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            PickUpGamePlay.instance.PickUpItem();
-            Destroy(gameObject);
+            pickUpBtn.SetActive(true);
+            pickUpBtn.GetComponent<DestroyItem>().item = this;
         }
     }
+
+    
 }
