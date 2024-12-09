@@ -7760,9 +7760,9 @@ PrefabInstance:
     - target: {fileID: 4795044063382067154, guid: 3a16ebc787190cd40a1d0f640c1ebf16,
         type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: 'MC
+      value: 'Ikaw:
 
-        ayos, wala na kalat, punta na ko kay lola!'
+        ayos! wala na ang kalat, punta na ko kay lola!'
       objectReference: {fileID: 0}
     - target: {fileID: 5353813998471828314, guid: 3a16ebc787190cd40a1d0f640c1ebf16,
         type: 3}
