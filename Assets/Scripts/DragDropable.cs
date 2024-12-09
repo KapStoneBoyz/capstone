@@ -22,8 +22,10 @@ public class DragDropable : MonoBehaviour
     }
     private bool isClickedOn
     {
+        
         get
         {
+            if (gameObject == null) return false;
             Ray ray = camera.ScreenPointToRay(curScreenPos);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
