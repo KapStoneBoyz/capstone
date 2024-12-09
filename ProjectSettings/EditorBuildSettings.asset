@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/KitchenCutScene.unity
     guid: 4851b454cccb5c24bbd01c977c2cb09e
   m_configObjects:
-    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 535ebe823ff857a42ab3afccb9c38218,
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 6f18767637a0a2244a0b0b3646939526,
       type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
-      guid: 661f8a7a7d0c6b245a27f9ba3d36cd23, type: 2}
+      guid: 9bba793bf510dac42b74f4c17d278575, type: 2}

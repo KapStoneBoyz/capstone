@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TrayCollected : MonoBehaviour
 {
     public DialogueManager endDialog;
     public List<GameObject> toys;
+    public WellDoneScreenManager starManager;
+    public TMP_Text completedText;
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Toy"))
@@ -23,6 +26,7 @@ public class TrayCollected : MonoBehaviour
 
     private void EndGame()
     {
-        endDialog.gameObject.SetActive(true);
+        starManager.Show();
+        completedText.gameObject.SetActive(true);
     }
 }

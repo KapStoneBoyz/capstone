@@ -9,6 +9,7 @@ public class PickUpGamePlay : MonoBehaviour
     public VariableJoystick joystick;
     public CharMovementManager characterMovementManager;
     public static PickUpGamePlay instance;
+    public WellDoneScreenManager starManager;
     public void Awake()
     {
         if (instance != null)
@@ -25,6 +26,7 @@ public class PickUpGamePlay : MonoBehaviour
             joystick.gameObject.SetActive(false);
             characterMovementManager.StopCharacter();
             dialog.gameObject.SetActive(true);
+            starManager.Show();
         }
     }
 }

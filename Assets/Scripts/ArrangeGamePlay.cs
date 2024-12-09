@@ -15,6 +15,7 @@ public class ArrangeGamePlay : MonoBehaviour
 
     public int[] arrangement = new int[4];
     public int index;
+    public WellDoneScreenManager starManager;
     public void PlaceButtonOnClick(int buttonID)
     {
         arrangement[index] = buttonID - 1;
@@ -39,10 +40,12 @@ public class ArrangeGamePlay : MonoBehaviour
             if(CheckAcceptedAnswer( new int[] { 1, 2, 3, 0 }))
             {
                 correct.gameObject.SetActive(true);
+                starManager.Show();
             }
             else if(CheckAcceptedAnswer( new int[]{ 1, 3, 2, 0 }))
             {
                 correct.gameObject.SetActive(true);
+                starManager.Show();
             }
             else
             {
