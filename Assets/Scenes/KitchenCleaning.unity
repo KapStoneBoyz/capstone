@@ -4156,7 +4156,7 @@ PrefabInstance:
     - target: {fileID: 4795044063382067154, guid: 3a16ebc787190cd40a1d0f640c1ebf16,
         type: 3}
       propertyPath: nextScene
-      value: KitchenCooking
+      value: LivingRoomCleaning
       objectReference: {fileID: 0}
     - target: {fileID: 4795044063382067154, guid: 3a16ebc787190cd40a1d0f640c1ebf16,
         type: 3}

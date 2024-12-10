@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Toy
   - Kitchen
+  - Item
   layers:
   - Default
   - TransparentFX

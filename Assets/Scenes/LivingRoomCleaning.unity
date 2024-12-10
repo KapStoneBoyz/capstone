@@ -1713,6 +1713,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &475285616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8421825623236713371, guid: 069ca176a9d75b24f95aad3145a37b59,
+    type: 3}
+  m_PrefabInstance: {fileID: 747419728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &553710826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2101,8 +2107,8 @@ GameObject:
   - component: {fileID: 648298142}
   - component: {fileID: 648298141}
   - component: {fileID: 648298140}
-  - component: {fileID: 648298139}
-  - component: {fileID: 648298138}
+  - component: {fileID: 648298143}
+  - component: {fileID: 648298144}
   m_Layer: 0
   m_Name: Books
   m_TagString: Toy
@@ -2110,90 +2116,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &648298138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648298137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a35c9091e94074683f039f377a5951, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  press:
-    m_Name: Press
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: fcd51bb5-dd9f-4c07-8265-2c32ebf949fd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 11fc04e6-ace9-427c-ab62-57afdcee3ab1
-      m_Path: <Mouse>/leftButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Press
-      m_Flags: 0
-    - m_Name: 
-      m_Id: e15618c2-9833-43af-8630-a04bcd57e029
-      m_Path: <Touchscreen>/Press
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Press
-      m_Flags: 0
-    m_Flags: 0
-  screenPos:
-    m_Name: Screen Pos
-    m_Type: 0
-    m_ExpectedControlType: Vector2
-    m_Id: ff95d409-ae70-4a49-b5c9-19de29e29de7
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: b21a59de-c139-4bf7-82b9-a838ba35ed24
-      m_Path: <Mouse>/position
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Screen Pos
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 373d703f-7059-43c1-8afc-41ea23717bb1
-      m_Path: <Touchscreen>/primaryTouch/position
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Screen Pos
-      m_Flags: 0
-    m_Flags: 0
---- !u!64 &648298139
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648298137}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6196831458804169944, guid: 02ad78cca7f19f843b49a2e580791919, type: 3}
 --- !u!23 &648298140
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2255,12 +2177,46 @@ Transform:
   m_GameObject: {fileID: 648298137}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.35, y: 0.10659428, z: -9.893}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.35, y: 0.10659428, z: -9.914}
+  m_LocalScale: {x: 1.9250019, y: 1.9250019, z: 1.9250019}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &648298143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648298137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468d9a15898ab0a478671dc7dafa57b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpBtn: {fileID: 475285616}
+--- !u!65 &648298144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648298137}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.25608534, y: 0.09843382, z: 0.32059142}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &676691001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2437,6 +2393,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3930837456596159527, guid: 069ca176a9d75b24f95aad3145a37b59,
+        type: 3}
+      propertyPath: gamePlay
+      value: 
+      objectReference: {fileID: 1126845883}
     - target: {fileID: 5394399217254789807, guid: 069ca176a9d75b24f95aad3145a37b59,
         type: 3}
       propertyPath: m_Name
@@ -2910,6 +2871,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1647054485}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &904138840 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2420248919781534025, guid: 717ec81e802f73d44b4bff4a9c94f3b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647054485}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d39deb78cbd524e96ccdce6b658191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &904593106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3192,10 +3165,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d1bb662515e7742aa0ef23b35619bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemCount: 4
+  itemCount: 3
   dialog: {fileID: 6811868639095090552}
   joystick: {fileID: 747419729}
-  characterMovementManager: {fileID: 0}
+  characterMovementManager: {fileID: 904138840}
   starManager: {fileID: 1834643901}
 --- !u!4 &1126845884
 Transform:
@@ -5502,8 +5475,7 @@ GameObject:
   - component: {fileID: 1872466796}
   - component: {fileID: 1872466795}
   - component: {fileID: 1872466794}
-  - component: {fileID: 1872466793}
-  - component: {fileID: 1872466792}
+  - component: {fileID: 1872466798}
   m_Layer: 0
   m_Name: TeddyBear
   m_TagString: Toy
@@ -5511,95 +5483,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1872466792
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872466791}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &1872466793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872466791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a35c9091e94074683f039f377a5951, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  press:
-    m_Name: Press
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: 1b2e2581-32d4-409d-a807-b04bb86a79a6
-    m_Processors: 
-    m_Interactions: Press
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f2233e4f-6e3a-4b4b-84ff-6faa26e4fe21
-      m_Path: <Mouse>/leftButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Press
-      m_Flags: 0
-    - m_Name: 
-      m_Id: cefc3b66-6166-464b-9d9e-9a96462cbb59
-      m_Path: <Touchscreen>/Press
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Press
-      m_Flags: 0
-    m_Flags: 0
-  screenPos:
-    m_Name: Screen Pos
-    m_Type: 0
-    m_ExpectedControlType: Vector2
-    m_Id: 3dccfb38-09fc-4dfd-9a27-09179b23a1e6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 00a723b6-bdb7-4c90-b690-9fccee55ba18
-      m_Path: <Mouse>/position
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Screen Pos
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 62b76fa1-4bec-485a-9729-0655774c9509
-      m_Path: <Touchscreen>/position
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Screen Pos
-      m_Flags: 0
-    m_Flags: 0
 --- !u!64 &1872466794
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5615,7 +5498,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -5681,12 +5564,25 @@ Transform:
   m_GameObject: {fileID: 1872466791}
   serializedVersion: 2
   m_LocalRotation: {x: 0.013998576, y: -0.70696825, z: -0.70696825, w: -0.013998576}
-  m_LocalPosition: {x: -4.993, y: 0.16546829, z: -7.379}
-  m_LocalScale: {x: 16.956379, y: 16.95637, z: 16.95637}
+  m_LocalPosition: {x: -4.9929, y: 0.273, z: -7.3791}
+  m_LocalScale: {x: 26.548603, y: 26.548588, z: 26.548588}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -182.269}
+--- !u!114 &1872466798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872466791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468d9a15898ab0a478671dc7dafa57b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpBtn: {fileID: 475285616}
 --- !u!1 &1891568215
 GameObject:
   m_ObjectHideFlags: 0
@@ -5813,9 +5709,10 @@ GameObject:
   - component: {fileID: 1895607775}
   - component: {fileID: 1895607774}
   - component: {fileID: 1895607773}
+  - component: {fileID: 1895607777}
   m_Layer: 0
   m_Name: Dog
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5835,11 +5732,11 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300014, guid: b4065be34e2086e4799781f9c5abd5d7, type: 3}
 --- !u!23 &1895607774
@@ -5901,12 +5798,25 @@ Transform:
   m_GameObject: {fileID: 1895607772}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000005338508, y: 0.7071068, z: 0.7071068, w: 0.00000005338508}
-  m_LocalPosition: {x: -1.24, y: 0.15, z: -7.459}
-  m_LocalScale: {x: 24.600649, y: 24.600649, z: 24.600649}
+  m_LocalPosition: {x: -1.24, y: 0.174, z: -7.465}
+  m_LocalScale: {x: 30.689308, y: 30.689308, z: 30.689308}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1895607777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895607772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468d9a15898ab0a478671dc7dafa57b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpBtn: {fileID: 475285616}
 --- !u!1 &1940523594 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8157804359357566445, guid: 5666bfa8093f4924ba013107051783da,
@@ -6726,7 +6636,7 @@ MonoBehaviour:
 
     ang dusing mo na apo, mag lalaba tayo at papaliguan kita.'
   transition: {fileID: 4222514901124641258}
-  nextScene: 
+  nextScene: Bathroom
 --- !u!95 &6841214404049406224
 Animator:
   serializedVersion: 5
