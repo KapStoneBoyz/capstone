@@ -28,5 +28,6 @@ public class TrayCollected : MonoBehaviour
     {
         starManager.Show();
         completedText.gameObject.SetActive(true);
+        endDialog.gameObject.SetActive(true);
     }
 }
