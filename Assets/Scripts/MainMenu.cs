@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject VolumePanel;
+    public GameObject LanguagePanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +34,18 @@ public class MainMenu : MonoBehaviour
     { 
         VolumePanel.SetActive(false);
         
+    }
+    public void OnLanguagePanelClick()
+    {
+        Debug.Log("Click");
+        if (!LanguagePanel.activeSelf)
+        {
+            LanguagePanel.SetActive(true);
+        }
+    }
+    public void OnLanguageBack()
+    {
+        LanguagePanel.SetActive(false);
+
     }
 }

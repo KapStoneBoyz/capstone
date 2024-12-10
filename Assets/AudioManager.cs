@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource SFXSource;
 
     public AudioClip background;
-    public AudioClip boywalk;
+    public AudioClip father;
 
     private void Start()
     {

@@ -6,6 +6,14 @@ using UnityEngine.Localization.Settings;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    private void Start()
+    {
+        int ID = PlayerPrefs.GetInt("LocaleKey", 1);
+    }
+
+
+
+
     private bool active = false;
     public void ChangeLocale(int localeID)
     {

@@ -46,6 +46,7 @@ public class DialogueManager : MonoBehaviour
                 StartCoroutine(ChangeScreen());
             }
             
+            
         }
         else
         {
