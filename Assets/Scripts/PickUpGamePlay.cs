@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickUpGamePlay : MonoBehaviour
 {
@@ -17,12 +18,13 @@ public class PickUpGamePlay : MonoBehaviour
         else
             instance = this;
     }
-
+    
     public void PickUpItem()
     {
         itemCount -= 1;
         if(itemCount <= 0)
         {
+            
             joystick.gameObject.SetActive(false);
             characterMovementManager.StopCharacter();
             dialog.gameObject.SetActive(true);

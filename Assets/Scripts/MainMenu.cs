@@ -25,8 +25,9 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Click");
         if (!VolumePanel.activeSelf)
-        VolumePanel.SetActive(true);
-
+        {
+            VolumePanel.SetActive(true);
+        }
     }
     public void OnVolumeBack()
     { 
