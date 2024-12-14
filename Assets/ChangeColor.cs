@@ -11,10 +11,7 @@ public class ChangeColor : MonoBehaviour
 
     public void ChangeTextColor()
     {
-        blanket.color = Color.green;
-        blanket.color = Color.green;
-        blanket.color = Color.green;
-        blanket.color = Color.green;
+        blanket.color = Color.green;        
     }
 
 

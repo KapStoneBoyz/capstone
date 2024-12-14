@@ -1257,6 +1257,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304087082}
   m_CullTransparentMesh: 1
+--- !u!1 &322166866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 322166869}
+  - component: {fileID: 322166868}
+  m_Layer: 0
+  m_Name: quitgame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &322166868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322166866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b34b7c6613f25744a4401e6d18466b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &322166869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322166866}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1756.2258, y: 461.33496, z: 0.12875223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425288745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,7 +2189,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Load
+  m_text: quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b991e8cfc6e7134d820d668fc8888a3, type: 2}
   m_sharedMaterial: {fileID: -6258260606079356000, guid: 8b991e8cfc6e7134d820d668fc8888a3,
@@ -2505,6 +2549,7 @@ GameObject:
   - component: {fileID: 961739752}
   - component: {fileID: 961739751}
   - component: {fileID: 961739750}
+  - component: {fileID: 961739754}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2630,6 +2675,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &961739754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961739749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b34b7c6613f25744a4401e6d18466b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &976196135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,6 +2852,7 @@ GameObject:
   - component: {fileID: 1102087965}
   - component: {fileID: 1102087967}
   - component: {fileID: 1102087968}
+  - component: {fileID: 1102087969}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2925,6 +2983,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myMixer: {fileID: 24100000, guid: 6ae70ef724a5b9f4db010773e3fffe4c, type: 2}
   musicSlider: {fileID: 1929655676}
+--- !u!114 &1102087969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102087960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b34b7c6613f25744a4401e6d18466b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1135859384
 GameObject:
   m_ObjectHideFlags: 0
@@ -4238,7 +4308,7 @@ GameObject:
   - component: {fileID: 1648860631}
   - component: {fileID: 1648860630}
   m_Layer: 5
-  m_Name: Load
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4308,13 +4378,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1102087969}
+        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4902,7 +4972,7 @@ MonoBehaviour:
   musicSource: {fileID: 1573749865}
   SFXSource: {fileID: 1423141494}
   background: {fileID: 8300000, guid: 808c229460e5c2e478a382a4091d0ba1, type: 3}
-  boywalk: {fileID: 0}
+  father: {fileID: 0}
 --- !u!4 &2025766350
 Transform:
   m_ObjectHideFlags: 0
@@ -4930,3 +5000,4 @@ SceneRoots:
   - {fileID: 662999837}
   - {fileID: 2025766350}
   - {fileID: 1184933652}
+  - {fileID: 322166869}
